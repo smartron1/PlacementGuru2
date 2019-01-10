@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yourstrulyssj.placementguru.activity.questions"
+    tools:showIn="@layout/app_bar_question"
+    android:isScrollContainer="true">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:isScrollContainer="true">
+
+
+    <TextView
+        android:id="@+id/questiontitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+
+        android:text="Question"
+        android:fontFamily="@font/ubuntu"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/questionnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="1"
+        android:fontFamily="@font/ubuntu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="155dp"
+
+        android:textSize="30dp"/>
+
+
+    <TextView
+        android:layout_below="@+id/questiontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/ubuntu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RadioGroup
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/question"
+        android:layout_marginTop="40dp"></RadioGroup>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundedbutton"
+        android:text="OK"
+        android:id="@+id/submit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Prev"
+        android:id="@+id/previous"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"/>
+
+
+
+</RelativeLayout>
+
+

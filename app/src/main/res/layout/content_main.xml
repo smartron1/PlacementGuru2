@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yourstrulyssj.placementguru.activity.HomePage"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></android.support.v4.view.ViewPager>
+
+
+    <RelativeLayout
+        android:id="@+id/alumnaelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/viewPager1"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/roundedbutton1"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/alumnae"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/roundedbutton"
+            android:clickable="true"
+            android:src="@drawable/alumnae" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/companylayout"
+        android:layout_width="wrap_content"
+        android:clickable="true"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewPager1"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:padding="4dp"
+        android:background="@drawable/roundedbutton1"
+        android:layout_marginRight="55dp">
+
+        <ImageView
+            android:id="@+id/company"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/company"
+            android:scaleType="center"
+
+
+            android:layout_alignParentTop="true"
+            android:background="@drawable/roundedbutton"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/companytxt"
+
+        android:layout_width="84dp"
+        android:fontFamily="@font/ubuntu"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/alumnaetxt"
+        android:layout_alignBottom="@+id/alumnaetxt"
+        android:layout_alignEnd="@+id/companylayout"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Company"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/internshiplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+
+        android:layout_below="@+id/alumnaetxt"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/roundedbutton1"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/internship"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/roundedbutton"
+            android:clickable="true"
+            android:src="@drawable/internship" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/internshiptxt"
+        android:visibility="invisible"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="#000000"
+        android:layout_marginEnd="70dp"
+        android:layout_below="@+id/internshiplayout"
+        android:layout_marginLeft="58dp"
+        android:gravity="center"
+        android:text="Internship"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/expertslayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@+id/companytxt"
+
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundedbutton1"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/experts"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/roundedbutton"
+            android:clickable="true"
+
+
+            android:scaleType="center"
+
+            android:src="@drawable/experts" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/expertstxt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expertslayout"
+
+        android:fontFamily="@font/ubuntu"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="Quiz"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/alumnaetxt"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alumnaelayout"
+        android:layout_marginLeft="60dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:fontFamily="@font/ubuntu"
+        android:text="Alumnae"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="600sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Report Bug / Give Feedback"
+            android:textSize="20sp"
+            android:id="@+id/bug"
+            android:textColor="#000000"
+
+
+           />
+    </RelativeLayout>
+
+</RelativeLayout>

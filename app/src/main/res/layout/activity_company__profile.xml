@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yourstrulyssj.placementguru.activity.user_Profile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:background="@android:color/holo_blue_light">
+
+
+    </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                android:layout_alignParentTop="true"/>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="158dip"
+        android:layout_height="158dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="100dp"
+        android:elevation="12dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="80dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="158dp"
+            android:layout_height="158dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.256"
+            app:srcCompat="@drawable/roundedbutton" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle=""
+        android:textSize="30dp"
+        android:text="" />
+
+            <RelativeLayout
+                android:id="@+id/linkLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/link1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:layout_alignParentLeft="true"
+
+
+                android:layout_marginTop="12dp"
+                android:src="@drawable/web"/>
+
+            <TextView
+                android:id="@+id/link2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="25dp"
+                android:layout_marginLeft="25dp"
+
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+
+                android:textColor="#DD4B39"
+                android:fontFamily="@font/ubuntu"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="Webiste"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/descTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/linkLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descTitle"
+
+        android:fontFamily="@font/ubuntu"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:id="@+id/domainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:text="Domain:"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/domain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/domainTitle"
+
+                android:fontFamily="@font/ubuntu"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/placementTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/domain"
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="Previous Offers:"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/placement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placementTitle"
+
+                android:fontFamily="@font/ubuntu"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/requirementsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placement"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:text="Requirements:"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/requirements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/requirementsTitle"
+
+                android:fontFamily="@font/ubuntu"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/focusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/requirements"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000000"
+                android:text="Focus:"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/focusTitle"
+
+                android:fontFamily="@font/ubuntu"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/moreinfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/focus"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000000"
+                android:text="More Info:"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/moreinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/moreinfoTitle"
+                android:textColor="@android:color/holo_blue_light"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

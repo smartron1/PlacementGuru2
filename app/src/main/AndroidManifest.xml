@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yourstrulyssj.placementguru"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.user_Profile" />
+        <activity
+            android:name=".activity.HomePage"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.Alumnae1"
+            android:label="@string/title_activity_alumnae1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.company" />
+        <activity android:name=".activity.company_Profile" />
+        <activity android:name=".activity.quiz" />
+        <activity android:name=".activity.questions" />
+        <activity android:name=".activity.result" />
+        <activity android:name=".activity.alumnaeFeedback" />
+        <activity android:name=".activity.webView" />
+        <activity android:name=".activity.AlumnaeEnroll" />
+        <activity android:name=".activity.AlumnaeHome" />
+        <activity android:name=".activity.AlumnaeRegister" />
+        <activity android:name=".activity.AlumnaeEdit" />
+        <activity android:name=".activity.thanks"></activity>
+        <activity android:name=".activity.AlumnaeSuggestion"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yourstrulyssj.placementguru.activity.AlumnaeSuggestion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:background="@android:color/holo_blue_light">
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/back" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/view2"
+                android:layout_width="158dip"
+                android:layout_height="158dip"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:background="@android:color/transparent"
+                android:elevation="12dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                app:cardCornerRadius="80dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="158dp"
+                    android:layout_height="158dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2"
+                    app:layout_constraintVertical_bias="0.256"
+                    app:srcCompat="@drawable/roundedbutton" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="" />
+
+            <RelativeLayout
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/center"
+
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/mail"
+                    android:layout_width="20dp"
+
+
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="95dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/mail" />
+
+                <TextView
+                    android:id="@+id/mail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="35dp"
+                    android:gravity="center"
+                    android:text="|"
+
+                    android:textSize="25dp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/mail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="9dp"
+                    android:gravity="center"
+                    android:text="Contact Me"
+                    android:textAlignment="center"
+                    android:textColor="#dd4b39"
+                    android:textSize="15dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/companyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/center"
+
+                android:layout_below="@id/textView5"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/ubuntu"
+
+                android:text="C.E.O."
+                android:textSize="20dp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:text="|"
+
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/package1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView5"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/center"
+                android:fontFamily="@font/ubuntu"
+                android:text="18 L.P.A"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_below="@+id/contact"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Interview:"
+                android:textColor="#000000"
+
+                android:textSize="20dp"
+                android:textStyle="" />
+
+            <EditText
+                android:id="@+id/interview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:breakStrategy="high_quality"
+                android:fontFamily="@font/ubuntu"
+                android:textSize="18dp" />
+
+
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Submit  "
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/interview"
+                android:background="@drawable/squaredsuggest"
+                android:fontFamily="@font/ubuntu"
+
+
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
